@@ -1,0 +1,43 @@
+{
+  "name": "reactjs-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix . && echo 'Lint complete.'",
+    "test": "NODE_ENV=test node -r @babel/register -r @babel/polyfill source/index.test.js",
+    "watch": "watch 'clear && npm run -s test | tap-nirvana && npm run -s lint' source",
+    "watch:test": "watch 'clear && npm run -s test | tap-nirvana'",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.1.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-emotion": "^10.0.19",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "prettier": "^1.18.2",
+    "prop-types": "^15.7.2",
+    "redux-logger": "^3.0.6",
+    "riteway": "^6.1.0",
+    "tap-nirvana": "^1.1.0",
+    "watch": "^1.0.2"
+  }
+}
